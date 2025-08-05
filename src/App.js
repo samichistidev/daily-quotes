@@ -14,8 +14,7 @@ function App() {
     return (
         <div className="App">
             <QueryClientProvider client={client}>
-                <Suspense fallback={<h1>Loading...</h1>}>
-                    <Quote />
+                <Suspense fallback={<span>Loading...</span>}>
                     <Quote />
                 </Suspense>
             </QueryClientProvider>
